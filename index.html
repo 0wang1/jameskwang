@@ -2,45 +2,36 @@
     <html>
       <head>
         <style>
+        #grad1 {
         background: linear-gradient(303deg, #00ffbd, #cdff74);
         background-size: 400% 400%;
 
-        -webkit-animation: AnimationName 30s ease infinite;
-        -moz-animation: AnimationName 30s ease infinite;
-        animation: AnimationName 30s ease infinite;
+        animation: 30s ease infinite;
 
-        @-webkit-keyframes AnimationName {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
+        @keyframes {
+          0%{background-position:2% 0%}
+          50%{background-position:99% 100%}
+          100%{background-position:2% 0%}
         }
-        @-moz-keyframes AnimationName {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-        @keyframes AnimationName {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-        p.serif {
-          font-family: "Fantasy", fantasy, serif;
-        }
-        p.thick{
-          font-weight: bold;
-        }
+      }
+      p.serif {
+        font-family: "Fantasy", fantasy, serif;
+      }
+      p.thick{
+        font-weight: bold;
+      }
 
-        h1 {
-          text-align: center;
-          color: green;
-          text-decoration: underline;
-        }
-        <title>jameskwang.me</title>
+      h1 {
+        text-align: center;
+        color: green;
+        text-decoration: underline;
+      }
+      <title>jameskwang.me</title>
       </style>
       </head>
 
       <body>
+      <div id="grad1"></div>
         <h1 class="thick"> The Webpage </h1>
         <p class ="serif">Help from http://www.w3schools.com/css/</p>
       </body>
