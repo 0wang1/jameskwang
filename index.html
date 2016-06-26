@@ -2,24 +2,27 @@
     <html>
       <head>
         <style>
-        #myDIV {
-          /*width: 300px;
-          height: 200px;
-          */
-          background: red;
-          -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-          animation: mymove 5s infinite;
-        }
-        /* Chrome, Safari, Opera */
-        @-webkit-keyframes mymove {
-            from {background-color: red;}
-            to {background-color: blue;}
-        }
+        background: linear-gradient(303deg, #00ffbd, #cdff74);
+        background-size: 400% 400%;
 
-        /* Standard syntax */
-        @keyframes mymove {
-            from {background-color: red;}
-            to {background-color: blue;}
+        -webkit-animation: AnimationName 30s ease infinite;
+        -moz-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+
+        @-webkit-keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
         }
         p.serif {
           font-family: "Fantasy", fantasy, serif;
@@ -38,7 +41,6 @@
       </head>
 
       <body>
-        <div id="myDIV"></div>
         <h1 class="thick"> The Webpage </h1>
         <p class ="serif">Help from http://www.w3schools.com/css/</p>
       </body>
