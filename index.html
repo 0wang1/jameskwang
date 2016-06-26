@@ -2,14 +2,22 @@
     <html>
       <head>
         <style>
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes mymove {
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+
+        /* Standard syntax */
+        @keyframes mymove {
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
         p.serif {
           font-family: "Fantasy", fantasy, serif;
         }
         p.thick{
           font-weight: bold;
-        }
-        body {
-          background-image: url("bgdesert.jpg");
         }
 
         h1 {
