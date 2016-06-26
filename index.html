@@ -2,20 +2,28 @@
     <html>
       <head>
         <style>
+        p.serif {
+          font-family: "Fantasy", fantasy, serif;
+        }
+        p.thick{
+          font-weight: bold;
+        }
         body {
           color: blue;
+          background-image: url("gradient_bg.png");
+          background-repeat: repeat-x;
         }
 
         h1 {
           color: green;
+          text-decoration: underline;
         }
         <title>jameskwang.me</title>
-        <link rel=stylesheet type="text/css" href="css/test.css">
       </style>
       </head>
 
       <body>
-        <h1> The Webpage </h1>
-        <p>Help from http://www.w3schools.com/css/tryit.asp?filename=trycss_color</p>
+        <h1 class="thick"> The Webpage </h1>
+        <p class ="serif">Help from http://www.w3schools.com/css/tryit.asp?filename=trycss_color</p>
       </body>
     </html>
